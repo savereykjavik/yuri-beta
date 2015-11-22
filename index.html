@@ -46,6 +46,12 @@
 			$( "#short" ).click(function() {
 				firstcarousel.carousel('next');
 			});
+
+			$("#short").on("swipeleft",function(){
+				console.log('swipe')
+			  	firstcarousel.carousel('next');
+			});
+
 			// slide scroll first slider
 			$( "#short2" ).click(function() {
 				firstcarousel.carousel('prev');
@@ -65,11 +71,6 @@
 			    if( $(e.target).is('a') ) {
 			        $(this).collapse('hide');
 			    }
-			});
-
-			$("#short").on("swipeleft",function(){
-				console.log('swipe')
-			  firstcarousel.carousel('next');
 			});
 		})
 	</script>
