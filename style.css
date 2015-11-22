@@ -19,8 +19,8 @@ body {
 
 .middle-text {
 	position: relative;
-    top: 30vh;
-    transform: translateY(-50%);
+	transform: translateY(82%);
+
 }
 
 .smaller-text-width {
