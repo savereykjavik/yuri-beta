@@ -19,7 +19,7 @@ body {
 
 .middle-text {
 	position: relative;
-    top: 55%;
+    top: 30vh;
     transform: translateY(-50%);
 }
 
