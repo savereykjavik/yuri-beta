@@ -19,7 +19,7 @@ body {
 
 .middle-text {
 	position: relative;
-	transform: translateY(82%);
+	top: 40vh;
 
 }
 
@@ -86,7 +86,7 @@ body {
 /* first */
 
 #first {
-	margin-top: 3vh;
+	margin-top: 50px;
 	background-color: #fff;
 }
 
@@ -159,4 +159,15 @@ h1 {
 #footer {
 	background-color: gray;
 	height: 200px;
+}
+
+
+/* mobile view */
+
+@media screen and (max-width: 500px) {
+
+	.middle-text {
+		top: 10vh;
+	}
+
 }
