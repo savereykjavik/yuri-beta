@@ -113,7 +113,7 @@ h4 {
 
 #short {
 	position: relative;
-	background-image: url('../images/space.png');
+	background-image: url('images/space.png');
 	box-shadow: inset 0 0 0 1000px rgba(255,255,255,.2);
 }
 
@@ -126,7 +126,7 @@ h1 {
 
 #short2 {
 	position: relative;
-	background-image: url('../images/laika.png');
+	background-image: url('images/laika.png');
 	box-shadow: inset 0 0 0 1000px rgba(255,255,255,.2);
 }
 
