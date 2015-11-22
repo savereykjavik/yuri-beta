@@ -41,7 +41,9 @@ body {
 }
 
 .leftarrow {
-	margin-top: 8%;
+    position: absolute;
+    left: 0px;
+    top: 50vh;
 }
 
 .rightarrow {
