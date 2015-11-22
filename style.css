@@ -1,0 +1,160 @@
+/* general */
+
+body {
+	background-color: #fff;
+	font-family: "Proxima-nova", sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+.container-fluid {
+	height: 96vh;
+	max-width: 1600px;
+}
+
+.container {
+	position: relative;
+	width: 100%;
+	max-width: 1000px;
+}
+
+.middle-text {
+	position: relative;
+    top: 55%;
+    transform: translateY(-50%);
+}
+
+.smaller-text-width {
+	max-width: 700px;
+}
+
+.white {
+	color: #FFF;
+}
+
+
+/* arrows */
+
+.arrow {
+	width: 50px;
+	opacity: 1;
+	cursor: pointer;
+}
+
+.leftarrow {
+	margin-top: 8%;
+}
+
+.rightarrow {
+    position: absolute;
+    right: 0px;
+    top: 50vh;
+}
+
+
+/* navbar */
+
+.navbar {
+	background-color: #FFF;
+	text-transform: uppercase;
+}
+
+
+/* carousel style */
+
+.carousel {
+	cursor: pointer;
+}
+
+.carousel-control.no-gradient {
+	background-image: none;
+}
+
+.carousel-indicators li {
+	height: 20px !important;
+	width: 20px !important;
+	margin-right: 5px !important;
+	border-radius: 30px;
+	opacity: 0.9;
+}
+
+
+/* all the page-elements */
+
+
+/* first */
+
+#first {
+	margin-top: 3vh;
+	background-color: #fff;
+}
+
+#yuri-logo {
+	text-align: center;
+}
+
+#intro-text {
+	padding: 20px 20px 0 20px;
+}
+
+.logo {
+	font-size: 10rem;
+	letter-spacing: 1.6;
+	font-weight: 600;
+	line-height: 0.9;
+}
+
+h4 {
+	text-transform: uppercase;
+	font-weight: 100;
+}
+
+
+/* 48H brief */
+
+#short {
+	position: relative;
+	background-image: url('../images/space.png');
+	box-shadow: inset 0 0 0 1000px rgba(255,255,255,.2);
+}
+
+h1 {
+	font-size: 8rem;
+	letter-spacing: 1.6;
+	font-weight: 700;
+	line-height: 0.9;
+}
+
+#short2 {
+	position: relative;
+	background-image: url('../images/laika.png');
+	box-shadow: inset 0 0 0 1000px rgba(255,255,255,.2);
+}
+
+
+
+/* offers */
+
+#offers {
+	background-color: yellow;
+}
+
+#offer1 {
+	background-color: orange;
+}
+
+
+
+/* us */
+
+#us {
+	background-color: white;
+}
+
+
+
+/* footer */
+
+#footer {
+	background-color: gray;
+	height: 200px;
+}

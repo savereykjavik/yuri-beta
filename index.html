@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<!-- fonts -->
+	<script src="https://use.typekit.net/kgc4ugk.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,700,900,200' rel='stylesheet' type='text/css'>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>YURI - Digital Growth Agency</title>
+
+	<!-- jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<!-- Latest compiled and minified bootstrap CSS -->
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous"> -->
+	<!-- Latest compiled and minified bootstrap JavaScript -->
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script> -->
+	
+	<script src="js/bootstrap.min.js"></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet"/>
+  	<link href="style.css" rel="stylesheet"/>
+
+	<script>
+		$(function() {
+			var firstcarousel = $('#slide48h')
+			var secondcarousel = $('#slideoffers')
+
+			// settings for all carousels
+			$('.carousel').carousel({
+				interval: false,
+				wrap: false
+			})
+
+			// slide scroll first slider
+			$( "#short" ).click(function() {
+				firstcarousel.carousel('next');
+			});
+			// slide scroll first slider
+			$( "#short2" ).click(function() {
+				firstcarousel.carousel('prev');
+			});
+
+			// slide scroll second slider
+			$( "#offers" ).click(function() {
+				secondcarousel.carousel('next');
+			});
+			// slide scroll second slider
+			$( "#offer1" ).click(function() {
+				secondcarousel.carousel('prev');
+			});
+
+			// fix to collapse mobile navbar again after clickin on it
+			$(document).on('click','.navbar-collapse.in',function(e) {
+			    if( $(e.target).is('a') ) {
+			        $(this).collapse('hide');
+			    }
+			});
+		})
+	</script>
+
+</head>
+
+<body>
+
+<!-- navigation panel -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+  
+	  <!-- Brand and toggle get grouped for better mobile display -->
+	  <div class="navbar-header">
+	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
+	      <span class="sr-only">Toggle navigation</span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	      <span class="icon-bar"></span>
+	    </button>
+	  </div>
+
+	  <div class="collapse navbar-collapse" id="navbar-collapse-main">
+		<ul class="nav navbar-nav">
+	        <li><a href="#first">Home</a></li>
+	        <li><a href="#slide48h">48H Brief</a></li>
+	        <li><a href="#slideoffers">Our offering</a></li> 
+	        <li><a href="#us">Who we are</a></li>
+	        <li><a href="#footer">Contact</a></li> 
+	    </ul>
+	  </div>
+
+	</div>
+</nav>
+<!-- end navigation panel -->
+
+
+<!-- first section -->
+<div class="container-fluid" id="first">
+	<div class="container middle-text">
+		<div class="row">
+		  <div id="yuri-logo" class="col-md-6">
+		  	<p class="logo">YURI</p>
+		  	<h4>Digital Growth Agency</h4>
+		  </div>
+		  <div id="intro-text" class="col-md-6">
+		  	<p>We bring startups to the digital stratosphere
+We love startups, and most of all we love to think and work like a startup. Our approach to growth is holistic and data driven, we believe in sustainable growth and that speed and iteration are fundamental to succeed. As growth strategists we combine skills at the intersection of marketing, data analysis, tech and design.</p>
+		  </div>
+		</div>
+	</div>
+</div>
+<!--  end first section -->
+
+
+
+<!-- second section 48 hour -->
+<div id="slide48h" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#slide48h" data-slide-to="0" class="active"></li>
+    <li data-target="#slide48h" data-slide-to="1"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+
+    <div class="item active">
+		<div class="container-fluid" id="short">
+			<div class="rightarrow col-md-1">
+				<img class="arrow 48right" src="images/rightwhite.svg"/>
+			</div>
+			<div class="container middle-text">
+				<div class="row">
+					<div class="col-md-11">
+						<h1>48H future growth</h1>
+			  	<p class="smaller-text-width">We bring startups to the digital stratosphere
+	We love startups, and most of all we love to think and work like a startup. Our approach to growth is holistic and data driven, we believe in sustainable growth and that speed and iteration are fundamental to succeed. As growth strategists we combine skills at the intersection of marketing, data analysis, tech and design.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+
+    <div class="item">
+		<div class="container-fluid" id="short2">
+			<div class="container middle-text">
+				<div class="row">
+					<div class="leftarrow col-md-1">
+						<img class="arrow 48left" src="images/leftwhite.svg"/>
+					</div>
+					<div class="col-md-11">
+					</div>
+				</div>
+
+			</div>
+		</div>
+    </div>
+
+  </div>
+</div>
+<!-- end second section 48 hour -->
+
+
+<!-- Third section offers -->
+<div id="slideoffers" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#slideoffers" data-slide-to="0" class="active"></li>
+    <li data-target="#slideoffers" data-slide-to="1"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+
+    <div class="item active">
+		<div class="container-fluid" id="offers">
+			<div class="container middle-text">
+				<div class="row">
+					<h1>Our offers.</h1>
+					<p class="smaller-text-width">We can deliver projects from product analysis and usability testing to more comprehensive analysis of your growth funnel, and dedicated in-depth work on specific parts of the funnel and product development. Get in contact to book a meeting and discuss with us what we can do for you!</p>
+				</div>
+			</div>
+		</div>
+    </div>
+
+    <div class="item">
+		<div class="container-fluid" id="offer1">
+			<div class="container middle-text">
+				<div class="row">
+					<h1>Our offers.</h1>
+				</div>
+			</div>
+		</div>
+    </div>
+
+  </div>
+</div>
+<!-- end third section offers -->
+
+<!-- forth section us -->
+
+<div class="container-fluid" id="us">
+	<div class="container middle-text">
+		<div class="row">
+			<h1>Who we are.</h1>
+		</div>
+	</div>
+</div>
+
+<!-- end forth section us  -->
+
+<!-- footer -->
+
+<div class="container-fluid" id="footer">
+	<div class="container">
+	</div>
+</div>
+
+<!-- end footer -->
+
+</body>
