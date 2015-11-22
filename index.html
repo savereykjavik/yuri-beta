@@ -43,9 +43,7 @@
 			$( "#short" ).click(function() {
 				firstcarousel.carousel('next');
 			});
-
 			$("#short").on("swipeleft",function(){
-				console.log('swipe')
 			  	firstcarousel.carousel('next');
 			});
 
@@ -53,14 +51,24 @@
 			$( "#short2" ).click(function() {
 				firstcarousel.carousel('prev');
 			});
+			$("#short2").on("swiperight",function(){
+			  	firstcarousel.carousel('prev');
+			});
 
 			// slide scroll second slider
 			$( "#offers" ).click(function() {
 				secondcarousel.carousel('next');
 			});
+			$("#offers").on("swipeleft",function(){
+			  	secondcarousel.carousel('next');
+			});
 			// slide scroll second slider
 			$( "#offer1" ).click(function() {
 				secondcarousel.carousel('prev');
+			});
+			$("#offer1").on("swiperight",function(){
+				console.log('swipe')
+			  	secondcarousel.carousel('prev');
 			});
 
 			// fix to collapse mobile navbar again after clickin on it
