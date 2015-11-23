@@ -14,6 +14,8 @@
 
 	<!-- jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<!-- Touchswipe plugin -->
+	<script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
 
 	<!-- Latest compiled and minified bootstrap CSS -->
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous"> -->
@@ -39,25 +41,17 @@
 			$( "#short" ).click(function() {
 				firstcarousel.carousel('next');
 			});
-			$("#short").on("swipeleft",function(){
-			  	firstcarousel.carousel('next');
-			});
 
 			// slide scroll first slider
 			$( "#short2" ).click(function() {
 				firstcarousel.carousel('prev');
-			});
-			$("#short2").on("swiperight",function(){
-			  	firstcarousel.carousel('prev');
 			});
 
 			// slide scroll second slider
 			$( "#offers" ).click(function() {
 				secondcarousel.carousel('next');
 			});
-			$("#offers").on("swipeleft",function(){
-			  	secondcarousel.carousel('next');
-			});
+
 			// slide scroll second slider
 			$( "#offer1" ).click(function() {
 				secondcarousel.carousel('prev');
@@ -69,6 +63,33 @@
 			        $(this).collapse('hide');
 			    }
 			});
+
+
+			$("#slide48h").swipe( {
+		        //swipe handler for left/rightdirections
+		        swipeLeft:function(event, direction) {
+		          $(this).carousel('next');
+		        },
+		        swipeRight:function(event, direction) {
+		          $(this).carousel('prev');
+		        },
+		        //Default is 75px, set to 0 for demo so any distance triggers swipe
+		         threshold:20
+	      	});
+
+
+	      	$("#slideoffers").swipe( {
+		        //swipe handler for left/rightdirections
+		        swipeLeft:function(event, direction) {
+		          $(this).carousel('next');
+		        },
+		        swipeRight:function(event, direction) {
+		          $(this).carousel('prev');
+		        },
+		        //Default is 75px, set to 0 for demo so any distance triggers swipe
+		         threshold:20
+	      	});
+
 		})
 	</script>
 
