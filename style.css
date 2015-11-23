@@ -8,6 +8,7 @@ body {
 
 .container-fluid {
 	height: 96vh;
+	min-height: 600px;
 	max-width: 1600px;
 }
 
@@ -19,12 +20,27 @@ body {
 
 .middle-text {
 	position: relative;
-	top: 40vh;
+    top: 50%;
+    transform: translateY(-50%);
 
 }
 
 .smaller-text-width {
 	max-width: 700px;
+}
+
+.upper-text {
+	text-transform: uppercase;
+	font-size: 3rem;
+    font-weight: 500;
+	text-align: right;
+	margin-bottom: 20px;
+}
+
+.boxed-text {
+/*	border: 2px solid #7facb6;*/
+	border: 2px solid #eb763f;
+	padding: 15px;
 }
 
 .white {
@@ -92,6 +108,7 @@ body {
 
 #yuri-logo {
 	text-align: center;
+    transform: translateY(100%);
 }
 
 #intro-text {
@@ -175,3 +192,12 @@ h1 {
 	}
 
 }
+
+/* bootstrap tablet layout breakpoint */
+@media screen and (max-width: 992px) {
+
+#yuri-logo {
+	transform: none;
+}
+
+
