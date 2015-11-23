@@ -41,6 +41,7 @@ body {
 /*	border: 2px solid #7facb6;*/
 	border: 2px solid #eb763f;
 	padding: 15px;
+	font-size: 1.2em;
 }
 
 .white {
@@ -183,10 +184,6 @@ h1 {
 
 @media screen and (max-width: 500px) {
 
-	.middle-text {
-		top: 20vh;
-	}
-
 	.arrow {
 		display: none;
 	}
@@ -200,4 +197,22 @@ h1 {
 	transform: none;
 }
 
+.display-web {
+	display: none;
+}
 
+.upper-text {
+	text-align: center;
+}
+
+
+
+}
+
+@media screen and (min-width: 992px) {
+
+	.display-mobile {
+	display: none;
+}
+
+}
