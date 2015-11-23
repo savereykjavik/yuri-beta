@@ -67,10 +67,10 @@
 
 			firstcarousel.swipe( {
 		        //swipe handler for left/rightdirections
-		        swipeLeft:function(event, direction) {
+		        swipeLeft:function(event, direction, distance, duration, fingerCount) {
 		          firstcarousel.carousel('next');
 		        },
-		        swipeRight:function(event, direction) {
+		        swipeRight:function(event, direction, distance, duration, fingerCount) {
 		          firstcarousel.carousel('prev');
 		        },
 		        allowPageScroll:"auto",
@@ -81,10 +81,10 @@
 
 	      	secondcarousel.swipe( {
 		        //swipe handler for left/rightdirections
-		        swipeLeft:function(event, direction) {
+		        swipeLeft:function(event, direction, distance, duration, fingerCount) {
 		          secondcarousel.carousel('next');
 		        },
-		        swipeRight:function(event, direction) {
+		        swipeRight:function(event, direction, distance, duration, fingerCount) {
 		          secondcarousel.carousel('prev');
 		        },
 		        allowPageScroll:"auto",
