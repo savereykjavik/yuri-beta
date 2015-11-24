@@ -237,6 +237,10 @@ h1 {
 		transform: none;
 	}
 
+	.logo {
+	font-size: 14rem;
+	}
+
 	.display-web {
 		display: none;
 	}
@@ -249,6 +253,10 @@ h1 {
 
 	.boxed-text {
 		max-width: none;
+	}
+
+	#offer1 {
+		min-height: 1000px;
 	}
 }
 
