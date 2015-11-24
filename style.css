@@ -9,34 +9,34 @@ body {
 p {
 	font-family: "baskerville-urw";
 	font-style: italic;
-	font-size: 2rem;
+	font-size: 2.2rem;
 }
 
 .container-fluid {
-/*	height: 96vh;
+	height: 96vh;
 	max-height: 900px;
 	min-height: 600px;
-	max-width: 1600px;*/
+	max-width: 1600px;
     /* height: 96vh; */
     /* max-height: 900px; */
-    position: relative;
-    min-height: 96vh;
-    max-width: 1600px;
+/*    position: relative;
+    height: 96vh;
+    max-width: 1600px;*/
 }
 
 .container {
-	position: relative;
+/*	position: relative;*/
 	width: 100%;
 	max-width: 1000px;
 }
 
 .middle-text {
-/*	position: relative;
-    top: 50%;
-    transform: translateY(-50%);*/
-    position: absolute;
+	position: relative;
     top: 50%;
     transform: translateY(-50%);
+/*    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);*/
 
 }
 
@@ -130,7 +130,6 @@ p {
 /* first */
 
 #first {
-	margin-top: 50px;
 	background-color: #fff;
 }
 
@@ -221,14 +220,18 @@ h1 {
 /* mobile view */
 
 @media screen and (max-width: 500px) {
-
+		#offer1 {
+		min-height: 1100px;
+	}
 
 
 }
 
 /* bootstrap tablet layout breakpoint */
 @media screen and (max-width: 992px) {
-
+	#first {
+		margin-top: 50px;
+	}
 	.arrow {
 		display: none;
 	}
@@ -256,7 +259,11 @@ h1 {
 	}
 
 	#offer1 {
+<<<<<<< HEAD
 		min-height: 1000px;
+=======
+		min-height: 900px;
+>>>>>>> master
 	}
 }
 
