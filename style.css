@@ -14,18 +14,12 @@ p {
 
 .container-fluid {
 	height: 96vh;
-	max-height: 900px;
 	min-height: 600px;
 	max-width: 1600px;
-    /* height: 96vh; */
-    /* max-height: 900px; */
-/*    position: relative;
-    height: 96vh;
-    max-width: 1600px;*/
 }
 
 .container {
-/*	position: relative;*/
+	position: relative;
 	width: 100%;
 	max-width: 1000px;
 }
@@ -34,11 +28,9 @@ p {
 	position: relative;
     top: 50%;
     transform: translateY(-50%);
-/*    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);*/
 
 }
+
 
 .smaller-text-width {
 	max-width: 700px;
@@ -220,10 +212,15 @@ h1 {
 /* mobile view */
 
 @media screen and (max-width: 500px) {
-		#offer1 {
-		min-height: 1100px;
+	.container-fluid {
+		padding-bottom: 70px;
+	    padding-top: 40px;
+	    height: 100%;
 	}
 
+	.middle-text {
+		transform: none;
+	}
 
 }
 
@@ -259,11 +256,7 @@ h1 {
 	}
 
 	#offer1 {
-<<<<<<< HEAD
-		min-height: 1000px;
-=======
 		min-height: 900px;
->>>>>>> master
 	}
 }
 
