@@ -6,6 +6,12 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
+p {
+	font-family: "baskerville-urw";
+	font-style: italic;
+	font-size: 2rem;
+}
+
 .container-fluid {
 	height: 96vh;
 	max-height: 900px;
@@ -43,7 +49,7 @@ body {
 	border: 2px solid #eb763f;
 	padding: 20px;
     margin: 0 0 0 auto;
-    max-width: 350px;
+    max-width: 370px;
 }
 
 .white {
@@ -59,16 +65,22 @@ body {
 	cursor: pointer;
 }
 
+.arrow:hover {
+	opacity: 0.5;
+}
+
 .leftarrow {
     position: absolute;
     left: 0px;
-    top: 50vh;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .rightarrow {
     position: absolute;
     right: 0px;
-    top: 50vh;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 
@@ -125,6 +137,10 @@ body {
 	line-height: 0.7;
 }
 
+#yuri-logo p {
+	margin-top: 15px;
+}
+
 h4 {
 	text-transform: uppercase;
 	font-weight: 100;
@@ -149,7 +165,7 @@ h1 {
 
 #short2 {
 	position: relative;
-	background-image: url('images/laika.png');
+	background-image: url('images/space.png');
 	background-repeat: no-repeat;
 	box-shadow: inset 0 0 0 1000px rgba(255,255,255,.2);
 }
