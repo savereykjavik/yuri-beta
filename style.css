@@ -23,7 +23,7 @@ h3 {
 
 h4 {
 	font-size: 2rem;
-	color: #FFF;
+	font-weight: 300;
 }
 
 .container-fluid {
@@ -177,11 +177,6 @@ h4 {
 	font-size: 3rem;
 }
 
-h4 {
-	text-transform: uppercase;
-	font-weight: 100;
-}
-
 
 /* 48H brief */
 
@@ -235,8 +230,7 @@ h1 {
 /* footer */
 
 #footer {
-	background-color: #313131;
-	color: #C5C5C5;
+	background-color: #E2E2E2;
 	max-height: 200px;
 	line-height: 1.4;
 }
