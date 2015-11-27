@@ -227,6 +227,7 @@ h1 {
 
 #offer1 {
 	background-color: rgba(255, 255, 0, 0.85);
+	padding-bottom: 130px;
 }
 
 #offerrow {
@@ -270,7 +271,6 @@ h1 {
 	.container-fluid {
 		min-height: 600px;
 	}
-
 }
 
 /* bootstrap tablet layout breakpoint */
@@ -278,8 +278,19 @@ h1 {
 	#first {
 		margin-top: 50px;
 	}
-	.arrow {
-		display: none;
+
+	.leftarrow {
+		left: 10px;
+    	bottom: 25px;
+    	transform: none;
+    	top: inherit;
+	}
+
+	.rightarrow {
+		right: 10px;
+    	bottom: 25px;
+    	transform: none;
+    	top: inherit;
 	}
 
 	#yuri-logo {
