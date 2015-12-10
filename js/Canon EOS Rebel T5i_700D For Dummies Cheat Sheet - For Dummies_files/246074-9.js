@@ -1,0 +1,1 @@
+document.write('<a target=\"_blank\" href=\"https://optimized-by.rubiconproject.com/t/1032/13817/142646-9.3371636.3456360?url=https%3A%2F%2Fwww.edx.org%2F%3Futm_source%3Drubicon%26utm_medium%3D160x600%26utm_campaign%3Duniversity\"><img border=\"0\" src=\"https://secure-assets.rubiconproject.com/static/psa/edx/RUBICON-160x600-1.jpg\" alt=\"edX\"></a>\n'); 

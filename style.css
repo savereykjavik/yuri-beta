@@ -212,6 +212,7 @@ h1 {
 }
 
 #short2 {
+	background-color: #EFEFEF;
 	position: relative;
 	background-repeat: no-repeat;
 	box-shadow: inset 0 0 0 1000px rgba(255,255,255,.2);
