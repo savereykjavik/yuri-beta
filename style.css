@@ -302,6 +302,16 @@ h2 {
 	background-color: white;
 }
 
+.photorow {
+	margin-top: 50px;
+}
+
+.us {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+}
+
 
 
 /* footer */
