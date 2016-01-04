@@ -39,6 +39,9 @@ h4 {
 
 .middle-text {
 	position: relative;
+	width: 100%;
+	max-width: 1000px;
+	position: relative;
     top: 50%;
     transform: translateY(-50%);
 
