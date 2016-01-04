@@ -295,6 +295,10 @@ h2 {
 /* mobile view */
 
 @media screen and (max-width: 500px) {
+
+	h1 {
+		font-size: 12rem;
+	}
 	.container-fluid {
 		padding-bottom: 70px;
 	    padding-top: 40px;
@@ -368,7 +372,7 @@ h2 {
 /* when navbar collapses */
 @media screen and (max-width: 767px) {
 
-/* keeping the dropdown part aligned with other li elements*/
+/* keeping the dropdown part aligned with other li elements */
 	.a {
 	padding-left: 15px;
 	}
