@@ -164,6 +164,9 @@ nav li {
 	margin-right: 20px;
 }
 
+.dropdown-menu li {
+	margin-right: 0px;
+}
 
 li.a {
 	padding-top: 15px;
@@ -358,6 +361,16 @@ h2 {
 
 	.display-mobile {
 	display: none;
+	}
+
+}
+
+/* when navbar collapses */
+@media screen and (max-width: 767px) {
+
+/* keeping the dropdown part aligned with other li elements*/
+	.a {
+	padding-left: 15px;
 	}
 
 }
