@@ -23,8 +23,60 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet"/>
   	<link href="style.css" rel="stylesheet"/>
 
+
+       <!-- SMOOTH SCROLL -->
+      <script>
+
+		jQuery(document).ready(function($) {
+		    $('a[href^="#"]').on('click',function (e) {
+		        e.preventDefault();
+
+		        var target = this.hash,
+		            $target = $(target);
+
+		        $('html, body').stop().animate({
+		              'scrollTop': $target.offset().top
+		        }, 600, 'swing', function () {
+		              window.location.hash = target;
+		        });  // end of animate
+		    });  // end of click
+
+
+		      var s = $("#slide48h");
+		      var n = $(".navbar");
+		      var nt = $(".navcolor");
+
+		      var pos = s.position(); 
+
+		      $(window).scroll(function() {
+		        var windowpos = $(window).scrollTop();
+		        console.log(windowpos);
+
+		        if (windowpos >= pos.top - 50) {
+		          n.addClass("whitebackground").removeClass("yuriblue");
+		          nt.addClass("graytext").removeClass("whitetext");
+
+		        } else {
+		          n.removeClass("whitebackground").addClass("yuriblue");
+		          nt.removeClass("graytext").addClass("whitetext");
+		        }
+		      });
+ 
+		}); // end of doc ready
+
+      </script>
+      <!-- End of SMOOTH SCROLL -->
+
+
+
+
 	<script>
 		$(function() {
+
+			$( ".navcolor" ).addClass( "whitetext" );
+			$( ".navbar" ).addClass( "yuriblue" );
+
+
 			var firstcarousel = $('#slide48h')
 			var secondcarousel = $('#slideoffers')
 
@@ -98,6 +150,9 @@
 
 <body>
 
+<div id="space">
+</div>
+
 <!-- navigation panel -->
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
@@ -114,18 +169,16 @@
 
 	  <div class="collapse navbar-collapse" id="navbar-collapse-main">
 		<ul class="nav navbar-nav">
-	        <li><a href="#first">Home</a></li>   
+	        <li><a href="#first" class="navcolor">Home</a></li>   
 	        <li class="a">
-				  <span data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-				    What we do
-				  </span>
-				  <ul class="dropdown-menu">
-				    <li><a href="#slideoffers">Growth & Digital Strategy</a></li>
-				    <li><a href="#slide48h">Innovation Lab</a></li>
-				  </ul>
+				  <span class="navcolor" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">What we do</span>
+				  	<ul class="dropdown-menu">
+					    <li><a href="#slideoffers">Growth & Digital Strategy</a></li>
+					    <li><a href="#slide48h">Innovation Lab</a></li>
+					</ul>
 	        </li> 
-	        <li><a href="#us">Who we are</a></li>
-	        <li><a href="#footer">Contact</a></li> 
+	        <li><a href="#us" class="navcolor">Who we are</a></li>
+	        <li><a href="#footer" class="navcolor">Contact</a></li> 
 	    </ul>
 	  </div>
 
@@ -269,7 +322,7 @@
 			<div class="container middle-text">
 				<div class="row">
 					<h2>Growth offers.</h2>
-					<p class="smaller-text-width">We offer tailored services throughout the product-lifecycle, from data-driven product analysis and usability testing to more comprehensive analysis and work on your growth strategy and product development. Get in contact to book a meeting and discuss with us what we can do for you!</br> Read more <span class="four"> →</span></p>
+					<p class="smaller-text-width">We offer tailored services throughout the product-lifecycle. From data-driven product analysis and usability testing to more comprehensive analysis and work on your growth strategy and product development. Get in contact to book a meeting and discuss with us what we can do for you!</br> Read more <span class="four"> →</span></p>
 				</div>
 			</div>
 		</div>
@@ -326,7 +379,7 @@
 	<div class="container middle-text">
 		<div class="row">
 			<h2>Who we are.</h2>
-			<p class="smaller-text-width">We are a diverse set of people, spun into a tight knit group at Hyper Island where the founding team met. Within our team we hold backgrounds and skills ranging from marketing and communication, scientific research, data-analysis, design and technology. </br>Combining our skills with a common passion for innovation and business, is what brought YURI about. We are committed to bringing a new kind of data-driven agency to the table, helping businesses to grow smart and sustainably with the best tools and methods available.<!-- We are not here to put frosting on your cake, but to make sure that it's the best freakin possible cake available out there. We believe this is what will truly make our clients grow, now and beyond the next campaign. --></p>
+			<p class="smaller-text-width">We are a diverse set of people, spun into a tight knit group at Hyper Island where the founding team met. Within our team we hold backgrounds and skills ranging from marketing and communication, scientific research, data-analysis, design and technology. </br>Combining our skills with a common passion for innovation and business, is what brought YURI about. We are committed to bringing a new kind of data-driven agency to the table, helping businesses to grow smart and sustainably with the best tools and methods available.</p>
 
 		<p>
 		/Alessandro, Caroline & Stefan, YURI co-founders
@@ -342,7 +395,7 @@
 <div class="container-fluid" id="footer">
 	<div class="container middle-text">
 		<div class="row">
-			<h3><b>YURI AGENCY</b> | Digital Growth Agency</br>
+			<h3><b>YURI AGENCY</b> | Innovation and Growth Agency</br>
 				email: hello@yuriagency.com</br>
 				phone: +46 73-82 83 080</br>
 

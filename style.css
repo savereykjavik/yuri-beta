@@ -100,10 +100,6 @@ font-size: 1.5em;
     max-width: 370px;
 }
 
-.white {
-	color: #FFF;
-}
-
 
 /* arrows */
 
@@ -139,39 +135,37 @@ font-size: 1.5em;
 /* navbar */
 
 .navbar {
-	background-color: #FFF;
 	text-transform: uppercase;
-	border: none;
+    -webkit-transition: background-color 300ms ease;
+    -moz-transition: background-color 300ms ease;
+    -o-transition: background-color 300ms ease;
+    -ms-transition: background-color 300ms ease;
+    transition: background-color 300ms ease;
 }
 
 .navbar-default .navbar-nav>li>a {
-    color: #A9A9A9;
     font-size: 1.1em;
  }
 
  .dropdown-menu {
- 	left: -50%;
- 	border: 1px solid #A9A9A9;
+ 	left: -20px;
+ 	border: 1px solid #e7e7e7;
+ 	border-top: none;
  	box-shadow: none;
+ 	padding: 15px 0;
  }
 
+ .dropdown-menu li {
+	margin-right: 0px;
+}
 
 .dropdown-menu>li>a {
-	color: #A9A9A9;
-}
-
-nav li {
-	margin-right: 20px;
-}
-
-.dropdown-menu li {
-	margin-right: 0px;
+	color: #777;
 }
 
 li.a {
 	padding-top: 15px;
     padding-bottom: 15px;
-    color: #A9A9A9;
     font-size: 1.1em;
     cursor: pointer;  
 }
@@ -179,6 +173,32 @@ li.a {
 li.a:hover {
 	color: #333;
 }
+
+nav li {
+	margin-right: 20px;
+}
+
+.whitetext {
+	color: #FFF !important;
+}
+
+.whitetext:hover {
+	color: black !important;
+}
+
+.graytext {
+	color: #777;
+}
+
+.whitebackground {
+	background-color: #FFF !important;
+	border: 1px solid #eee;
+}
+
+.yuriblue {
+	background-color: #7facb6 !important;
+}
+
 
 /* carousel style */
 
@@ -241,7 +261,7 @@ h1 {
 }
 
 h2 {
-	font-size: 8rem;
+	font-size: 7rem;
 	letter-spacing: 1.6;
 	font-weight: 700;
 	line-height: 0.9;
@@ -375,6 +395,15 @@ h2 {
 /* keeping the dropdown part aligned with other li elements */
 	.a {
 	padding-left: 15px;
+	}
+
+	.yuriblue {
+	background-color: #fff !important;
+	opacity: 1;
+	}
+
+	.whitetext {
+		color: #777 !important;
 	}
 
 }
