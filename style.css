@@ -10,6 +10,7 @@ p {
 	font-family: "baskerville-urw";
 	font-style: italic;
 	font-size: 2rem;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 h3 {
@@ -333,7 +334,7 @@ h2 {
 /* footer */
 
 #footer {
-	background-color: #E2E2E2;
+	background-color: #F7F7F7;
 	max-height: 200px;
 	line-height: 1.4;
 }
