@@ -99,8 +99,8 @@ font-size: 1.5em;
 }
 
 .boxed-text {
-    font-size: 1.2em;
-	border: 2px solid #eb763f;
+/*    font-size: 1.2em;*/
+/*	border: 2px solid #eb763f;*/
 	padding: 20px;
     margin: 0 0 0 auto;
     max-width: 370px;
@@ -149,7 +149,7 @@ font-size: 1.5em;
 /* navbar */
 
 .navbar {
-	text-transform: uppercase;
+/*	text-transform: uppercase;*/
     -webkit-transition: background-color 300ms ease;
     -moz-transition: background-color 300ms ease;
     -o-transition: background-color 300ms ease;
@@ -158,7 +158,9 @@ font-size: 1.5em;
 }
 
 .navbar-default .navbar-nav>li>a {
-    font-size: 1.1em;
+	font-family: "Proxima-nova", sans-serif;
+	font-weight: 600;
+    font-size: 1.5rem;
  }
 
  .dropdown-menu {
@@ -178,9 +180,11 @@ font-size: 1.5em;
 }
 
 li.a {
+	font-family: "Proxima-nova", sans-serif;
+	font-weight: 600;
 	padding-top: 15px;
     padding-bottom: 15px;
-    font-size: 1.1em;
+    font-size: 1.5rem;
     cursor: pointer;  
 }
 
@@ -210,7 +214,7 @@ nav li {
 }
 
 .yuriblue {
-	background-color: #7facb6 !important;
+	background-color: #fff !important;
 }
 
 
@@ -244,28 +248,42 @@ nav li {
 
 #yuri-logo {
 	text-align: center;
-    transform: translateY(100%);
-    -ms-transform: translateY(100%);
-	-webkit-transform: translateY(100%);
-	-moz-transform: translateY(100%);
-	-o-transform: translateY(100%);
+    transform: translateY(14%);
+    -ms-transform: translateY(14%);
+	-webkit-transform: translateY(14%);
+	-moz-transform: translateY(14%);
+	-o-transform: translateY(14%);
 }
 
 #intro-text {
 	padding: 20px 20px 0 20px;
+	border-left: 1px solid #424242;
+}
+
+#intro-text .upper-text {
+	padding: 20px;
+	padding-left: 110px;
+    margin: 0 0 0 auto;
 }
 
 h1 {
-	color: #2A2A2A;
-	font-size: 18rem;
+    color: #424242;
+    font-size: 14rem;
 	letter-spacing: 1.6;
 	font-weight: 500;
 	line-height: 0.9;
 }
 
 #yuri-logo p {
-	margin-top: 15px;
-	font-size: 3rem;
+    margin-top: 15px;
+    font-size: 2.7rem;
+    color: #424242;
+}
+
+#structure {
+	width: 100%;
+	margin-top: 20px;
+	max-width: 300px;
 }
 
 
@@ -324,6 +342,8 @@ h2 {
 	margin-top: 50px;
 }
 .us {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
 	width: 200px;
 	height: 200px;
 	border-radius: 100px;
@@ -345,6 +365,16 @@ h2 {
 
 	h1 {
 		font-size: 12rem;
+	}
+
+	.upper-text {
+		font-size: 2.2rem;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+	.boxed-text {
+		padding: 10px 0px 10px;
 	}
 	.container-fluid {
 		padding-bottom: 70px;
@@ -371,6 +401,21 @@ h2 {
 
 /* bootstrap tablet layout breakpoint */
 @media screen and (max-width: 992px) {
+
+	#intro-text .upper-text {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
+
+	#intro-text {
+		border-left: none;
+	}
+
+	#structure {
+    width: 60%;
+	}
+
 	#first {
 		margin-top: 50px;
 	}
