@@ -76,7 +76,7 @@ h4 {
 }
 
 #logo {
-	margin-top: 25vh;
+	padding-top: 25vh;
 	text-align: center;
   height: inherit !important;
 }
@@ -185,40 +185,43 @@ font-size: 1.5em;
 
 /* navbar */
 
-.navbar {
-/*	text-transform: uppercase;*/
-    -webkit-transition: background-color 300ms ease;
-    -moz-transition: background-color 300ms ease;
-    -o-transition: background-color 300ms ease;
-    -ms-transition: background-color 300ms ease;
-    transition: background-color 300ms ease;
-}
-
 .navbar-default {
 	border: none;
 
 }
 
 .navbar-default .navbar-nav>li>a {
-	font-family: "Proxima-nova", sans-serif;
+	font-family: serif;
 	font-weight: 400;
-  font-size: 1.5rem;
-	text-transform: uppercase;
+  font-size: 2rem;
  }
 
 .navbar-nav>li>.dropdown-menu {
 	margin-left: -20px;
-	    margin-top: -13px;
-	    text-transform: none;
-	    font-weight: 800;
-	    border: none;
-	    box-shadow: none;
-	    border-top-left-radius: 0;
-	    border-top-right-radius: 0;
+  margin-top: -13px;
+  text-transform: none;
+  font-weight: 800;
+  border: none;
+  box-shadow: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
  }
 
  .dropdown-menu li {
 	margin-right: 0px;
+}
+
+li {
+	transition: all .2s ease-in-out;
+}
+
+li:hover {
+	opacity: 0.8;
+}
+
+.graytext:hover {
+	color: black;
+	opacity: 0.8
 }
 
 .dropdown-menu>li>a {
@@ -226,18 +229,13 @@ font-size: 1.5em;
 }
 
 li.a {
-	font-family: "Proxima-nova", sans-serif;
+	font-family: serif;
 	font-weight: 400;
-	padding-top: 15px;
-    padding-bottom: 15px;
-    font-size: 1.5rem;
-    cursor: pointer;
-		text-transform: uppercase;
+line-height: 50px;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
-li.a:hover {
-	color: #1f1f1f;
-}
 
 nav li {
 	margin-right: 20px;
@@ -247,9 +245,6 @@ nav li {
 	color: #FFF !important;
 }
 
-.whitetext:hover {
-	color: black !important;
-}
 
 .graytext {
 	color: #777;
@@ -308,10 +303,12 @@ nav li {
 
 .nav-container {
 	margin-right: auto;
-margin-left: auto;
+	margin-left: auto;
 	position: relative;
 	width: 100%;
 	max-width: 1200px;
+	margin-top: 15px;
+	padding-left: 10px;
 }
 
 .navbar-toggle {
@@ -459,7 +456,7 @@ h2 {
 		font-size: 2rem !important;
 	}
 #logo {
-	margin-top: 10vh;
+	padding-top: 10vh;
 }
 
 	#intro {
