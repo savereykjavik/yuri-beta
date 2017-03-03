@@ -367,7 +367,7 @@ h1 {
 	background-image: url('images/space.png');
 	background-repeat: no-repeat;
 	/*box-shadow: inset 0 0 0 1000px rgba(255,255,255,.3);*/
-	box-shadow: inset 0 0 0 1000px rgba(226, 119, 119, 0.3)
+	box-shadow: inset 0 0 0 1000px rgba(230, 176, 176, 0.6);
 }
 
 h2 {
@@ -476,8 +476,8 @@ h2 {
 		padding-bottom: 70px;
 	    padding-top: 40px;
 	    height: 100%;
-			margin-left: 10px;
-			margin-right: 10px;
+			margin-left: 15px;
+			margin-right: 15px;
 	}
 
 	.arrow {
