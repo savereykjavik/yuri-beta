@@ -7,7 +7,7 @@
 	<script src="https://use.typekit.net/kgc4ugk.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:100,200,300,400,600,700,900' rel='stylesheet' type='text/css'>
-	
+
 	<!--   google analytics -->
 	  <script>
 	    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -25,10 +25,10 @@
 
 	<!-- jQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	
+
 	<!-- Touchswipe plugin script -->
 	<!-- <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script> -->
-	
+
 	<script src="js/bootstrap.min.js"></script>
 	<link href="css/bootstrap.min.css" rel="stylesheet"/>
   	<link href="style.css" rel="stylesheet"/>
@@ -56,7 +56,7 @@
 		      var n = $(".navbar");
 		      var nt = $(".navcolor");
 
-		      var pos = s.position(); 
+		      var pos = s.position();
 
 		      $(window).scroll(function() {
 		        var windowpos = $(window).scrollTop();
@@ -71,7 +71,7 @@
 		          // nt.removeClass("graytext").addClass("whitetext");
 		        }
 		      });
- 
+
 		}); // end of doc ready
 
       </script>
@@ -165,8 +165,8 @@
 
 <!-- navigation panel -->
 <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-  
+  <div class="nav-container">
+
 	  <!-- Brand and toggle get grouped for better mobile display -->
 	  <div class="navbar-header">
 	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
@@ -179,16 +179,16 @@
 
 	  <div class="collapse navbar-collapse" id="navbar-collapse-main">
 		<ul class="nav navbar-nav">
-	        <li><a href="#first" class="navcolor">Home</a></li>   
+	        <li><a href="#first" class="navcolor">Home</a></li>
 	        <li class="a">
 				  <span class="navcolor" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">What we do</span>
 				  	<ul class="dropdown-menu">
-					    <li><a href="#slideoffers">Growth & Digital Strategy</a></li>
+					    <li><a href="#slideoffers">Growth & Strategy</a></li>
 					    <li><a href="#slide48h">Innovation Lab</a></li>
 					</ul>
-	        </li> 
+	        </li>
 	        <li><a href="#us" class="navcolor">Who we are</a></li>
-	        <li><a href="#footer" class="navcolor">Contact</a></li> 
+	        <li><a href="#footer" class="navcolor">Contact</a></li>
 	    </ul>
 	  </div>
 
@@ -197,32 +197,111 @@
 <!-- end navigation panel -->
 
 
-<!-- first section -->
-<div class="container-fluid" id="first">
-	<div class="container middle-text">
-		<div class="row">
-
-		  <div id="yuri-logo" class="col-md-6">
-		  	<h1>YURI</h1>
-			<p>Innovation & Growth Agency</p>
+<!-- new first section -->
+<div class="container-fluid" id="logo">
+	<div class="center">
+		<div class="inline">
+		  <h1 style="font-size: 11rem;">YURI</h1>
 			<img src="images/logo_structure.png" id="structure"/>
-		  </div>
-		  <div id="intro-text" class="col-md-6">
-		  	<div class="upper-text left-aligned display-web">
-		  		We bring</br>businesses</br>to the digital</br> stratosphere
-		  	</div>
-		  	<div class="upper-text display-mobile">
-		  		We bring businesses to the digital stratosphere
-		  	</div>
-		  	<div class="boxed-text"><p>We love startups, and most of all we love to think and work like a startup. We believe that speed and iteration are fundamental to succeed. Our approach to innovation and growth is holistic and data driven - combining knowledge at the intersection of marketing, data-analysis, technology and design to help our clients grow and innovate.</p>
-			</div>
-		  </div>
-
+		</div>
+		<div>
+				<p style="font-size: 3.4rem;">Innovation & Growth Agency</p>
 		</div>
 	</div>
 </div>
+
+<div class="container-fluid" id="intro">
+	<div class="container">
+		<div class="row" id="intro-text">
+		  	<div class="intro-headline">
+		  		A startup growth agency
+		  	</div>
+		  	<div><p>
+					We love startups, and most of all we love to think and work like a startup. <br>We help companies grow by combining knowledge and skills at the intersection of marketing, data-analysis, user experience and product design.
+				</p></div>
+		  </div>
+		</div>
+	</div>
+</div>
+</div>
 <!--  end first section -->
 
+
+
+
+<!-- Third section offers -->
+<div id="slideoffers" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#slideoffers" data-slide-to="0" class="active"></li>
+    <li data-target="#slideoffers" data-slide-to="1"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+
+    <div class="item active">
+		<div class="container-fluid" id="offers">
+			<div class="rightarrow col-md-1">
+				<img class="arrow" src="images/rightdark.png"/>
+			</div>
+			<div class="container middle-text">
+				<div class="row">
+					<h2>Growth offers.</h2>
+					<p class="smaller-text-width">
+						<span class="boxed-color-text-white">
+							We offer tailored services throughout the digital product-lifecycle. </br>From quantitative and qualitative product analysis and usability testing to more comprehensive work on your growth and product development. Get in contact to book a meeting and discuss with us what we can do for you! </br>&nbsp;Read more <span class="four"> →</span>
+						</span>
+					</p>
+				</div>
+			</div>
+		</div>
+    </div>
+
+    <div class="item">
+		<div class="container-fluid" id="offer1">
+			<div class="leftarrow col-md-1">
+				<img class="arrow" src="images/leftdark.png"/>
+			</div>
+			<div class="container middle-text expand">
+				<div id="offerrow" class="row">
+					<div class="col-md-12">
+						<p>No two projects are alike. We always start off by getting to know eachother. Our three main offers are based on a natural flow of work towards growth optimisation. Regardless of the scope, we start by getting to know you and your business, move on to generate valuable insights, develop clear roadmaps, and implement. Get in touch with us at hello@yuriagency.com to talk more!</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="col-md-12 package-text">
+							Product & users
+						</div>
+						<div class="col-md-12">
+							<h3>We deep dive into an analysis of your product, the user experience and understanding your users through qualitative and quantitative data. This stage can include UX and user flows, usability testing, optimisation, in-depth product analysis and insights, data tracking, data analysis and roadmap prioritisation.</h3>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="col-md-12 package-text">
+							Growth analysis
+						</div>
+						<div class="col-md-12">
+							<h3>How to improve your digital growth strategy. We deliver an analysis and strategy for your growth funnel (acquisition, activation, retention, revenue, referral) and digital strategy. In-depth review of your growth engine (SEO, content, social media etc.). We identify key areas of improvement and the next steps to grow your business.</h3>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="col-md-12 package-text">
+							Growth team
+						</div>
+						<div class="col-md-12">
+							<h3>In this setup we work closely with you as a growth team. We kickstart growth projects combining skills in marketing, data analysis, technology and design - allowing us to move fast. Together we work in iterations to implement, test and measure initiatives to develop longterm strategies and a sustainable growth roadmap.</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+
+  </div>
+</div>
+<!-- end third section offers -->
 
 
 <!-- second section 48 hour -->
@@ -244,8 +323,12 @@
 			<div class="container middle-text">
 				<div class="row">
 					<div class="col-md-11">
-						<h2>48H innovation sprint.</h2>
-			  	<p class="smaller-text-width">Do you want to gain new insights into the possibilities that emerging technologies and data could bring to your business? In an intense 48 hour sprint we get hands on with how lean startup methods, emerging technologies and new business models can take your business and products to the next level.</p>
+						<h2>Innovation sprints.</h2>
+			  	<p class="smaller-text-width">
+						<span class="boxed-color-text-floral">
+							Looking to gain new insights into the possibilities that emerging technologies and data could bring to your business? In our innovation sprints we get hands on with how things such as lean startup methods, emerging technologies and new business models can take your business and products to the next level.
+						</span>
+					</p>
 					</div>
 				</div>
 			</div>
@@ -276,8 +359,8 @@
 							Emerging technology
 						</div>
 						<div class="col-md-12">
-							<h3>Are you curious of how the Internet of Things, Virtual reality and other emerging technologies can enhance your customer experience and take your products and brand to the next level? We get hands on and deep in to the latest technology.</h3>
-						</div>						
+							<h3>Are you curious of how the Internet of Things, Virtual reality and other emerging technologies can enhance your customer experience and take your products and brand to the next level? We go hands on and dive deep in to the latest technology.</h3>
+						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="col-md-12 package-text">
@@ -285,15 +368,15 @@
 						</div>
 						<div class="col-md-12">
 							<h3>How could your business benefit from cost-effective experimentation, quick iterations, community building and growth hacking? Using data to improve products, reduce customer lock-out, shape customer expectations and create better user experiences.</h3>
-						</div>						
+						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="col-md-12 package-text">
 							Disruption
 						</div>
 						<div class="col-md-12">
-							<h3>What will be the big next distruptor in your business? We think it should be you! Concept co-creation to identify future trends to lead within your area, leveraging the knowledge within your organisation and finding the future trends and concepts.</h3>
-						</div>						
+							<h3>What will be the big next distruptor in your business? (Hint, we think it should be you!) Concept co-creation to identify future trends to lead within your area, leveraging the knowledge within your organisation and finding the future trends and concepts.</h3>
+						</div>
 					</div>
 				</div>
 
@@ -305,87 +388,19 @@
 </div>
 <!-- end second section 48 hour -->
 
-
-<!-- Third section offers -->
-<div id="slideoffers" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#slideoffers" data-slide-to="0" class="active"></li>
-    <li data-target="#slideoffers" data-slide-to="1"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-
-    <div class="item active">
-		<div class="container-fluid" id="offers">
-			<div class="rightarrow col-md-1">
-				<img class="arrow" src="images/rightdark.png"/>
-			</div>
-			<div class="container middle-text">
-				<div class="row">
-					<h2>Growth offers.</h2>
-					<p class="smaller-text-width">We offer tailored services throughout the digital product-lifecycle. From data-driven product analysis and usability testing to more comprehensive analysis and work on your growth strategy and product development. Get in contact to book a meeting and discuss with us what we can do for you! &nbsp;Read more <span class="four"> →</span></p>
-				</div>
-			</div>
-		</div>
-    </div>
-
-    <div class="item">
-		<div class="container-fluid" id="offer1">
-			<div class="leftarrow col-md-1">
-				<img class="arrow" src="images/leftdark.png"/>
-			</div>
-			<div class="container middle-text expand">
-				<div id="offerrow" class="row">
-					<div class="col-md-12">
-						<p>No two projects are alike. We always start off by getting to know eachother. Our three main offers are based on a natural flow of work towards growth optimisation. Regardless of the scope, we start by getting to know you and your business, move on to generate valuable insights, develop clear roadmaps, and implement. Get in touch with us at hello@yuriagency.com to talk more!</p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4">
-						<div class="col-md-12 package-text">
-							Product & users
-						</div>
-						<div class="col-md-12">
-							<h3>We deep dive into an analysis of your product, the user experience and understanding your users through qualitative and quantitative data. This stage can include UX and user flows, usability testing, optimisation, in-depth product analysis and insights, data tracking, data analysis and roadmap prioritisation.</h3>
-						</div>						
-					</div>
-					<div class="col-md-4">
-						<div class="col-md-12 package-text">
-							Growth analysis
-						</div>
-						<div class="col-md-12">
-							<h3>How to improve your digital growth strategy. We deliver an analysis and strategy for your growth funnel (acquisition, activation, retention, revenue, referral) and digital strategy. In-depth review of your growth engine (SEO, content, social media etc.). We identify key areas of improvement and the next steps to grow your business.</h3>
-						</div>						
-					</div>
-					<div class="col-md-4">
-						<div class="col-md-12 package-text">
-							Growth team
-						</div>
-						<div class="col-md-12">
-							<h3>In this setup we work closely with you as a growth team. We kickstart growth projects combining skills in marketing, data analysis, technology and design - allowing us to move fast. Together we work in iterations to implement, test and measure initiatives to develop longterm strategies and a sustainable growth roadmap.</h3>
-						</div>						
-					</div>
-				</div>
-			</div>
-		</div>
-    </div>
-
-  </div>
-</div>
-<!-- end third section offers -->
-
 <!-- forth section us -->
 
 <div class="container-fluid" id="us">
 	<div class="container middle-text">
 		<div class="row">
 			<h2>Who we are.</h2>
-			<p class="smaller-text-width">We are a diverse set of people, spun into a tight knit group at Hyper Island where the founding team met. Within our team we hold backgrounds and skills ranging from marketing and communication, scientific research, data-analysis, design and technology. </br>Combining our skills with a common passion for innovation and business, is what brought YURI about. We are committed to bringing a new kind of data-driven agency to the table, helping businesses to grow smart and sustainably with the best tools and methods available.</p>
-
+			<p class="smaller-text-width">
+				<span class="boxed-color-text-cyan">
+					We are a diverse set of people, spun into a tight knit group at Hyper Island where the founding team met. Within our team we hold backgrounds and skills ranging from marketing and communication, scientific research, data-analysis, design and development. Our goal is to help businesses to grow smart and sustainably with the best tools and methods available.</p>
+				</span>
 		<p>
-		/Alessandro, Caroline & Stefan, YURI co-founders
+		</br>
+		Alessandro, Caroline & Stefan, YURI co-founders
 		</p>
 		</div>
 
@@ -416,11 +431,9 @@
 <div class="container-fluid" id="footer">
 	<div class="container middle-text">
 		<div class="row">
-			<h3><b>YURI AGENCY</b> | Innovation and Growth Agency</br>
+			<h3><b>©YURI </b></br>Innovation and Growth Agency</br>
 				Stockholm | Sweden</br>
-				email: hello@yuriagency.com</br>
-				twitter: @yuri_agency</br>
-				phone: +46(0)73-82 83 080</br>
+				hello@yuriagency.com</br>
 
 			</h3>
 		</div>
