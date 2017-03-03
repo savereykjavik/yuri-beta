@@ -387,7 +387,7 @@ h2 {
 #offers {
 	background-color: #4D74FC;
 	position: relative;
-	/*color: ghostwhite;*/
+	color: ghostwhite;
 }
 
 #offer1 {
@@ -505,7 +505,7 @@ h2 {
 
 	#structure {
     width: 60%;
-		max-width: 7vh;
+		max-width: 10vh;
     margin-bottom: 60px;
 	}
 
