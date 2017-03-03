@@ -309,6 +309,11 @@ margin-left: auto;
 	max-width: 1200px;
 }
 
+.navbar-toggle {
+	float: left;
+	margin-left: 15px;
+}
+
 #intro {
 	padding-top: 40px;
 	height: inherit;
@@ -434,12 +439,24 @@ h2 {
 @media screen and (max-width: 500px) {
 
 	h1 {
-		font-size: 12rem;
+		font-size: 6rem !important;
 	}
 
 	h2 {
+		font-size: 4rem;
 		line-height: 1;
     margin-bottom: 25px;
+	}
+
+	p {
+		font-size: 2rem !important;
+	}
+#logo {
+	margin-top: 10vh;
+}
+
+	#intro {
+		margin-top: 0px;
 	}
 
 	.upper-text {
@@ -488,6 +505,7 @@ h2 {
 
 	#structure {
     width: 60%;
+		max-width: 7vh;
     margin-bottom: 60px;
 	}
 
