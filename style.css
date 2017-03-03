@@ -11,7 +11,12 @@ p {
 	font-family: "baskerville-urw";
 	font-style: italic;
 	font-size: 2.5rem;
+	line-height: 1.5;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+#intro p {
+    line-height: 1.2;
 }
 
 h3 {
