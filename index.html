@@ -60,7 +60,7 @@
 
 		      $(window).scroll(function() {
 		        var windowpos = $(window).scrollTop();
-		        console.log(windowpos);
+		        // console.log(windowpos);
 
 		        if (windowpos >= pos.top - 50) {
 		          n.addClass("whitebackground").removeClass("yuriblue");
@@ -213,6 +213,7 @@
 <div class="container-fluid" id="intro">
 	<div class="container">
 		<div class="row" id="intro-text">
+			<div class="col-md-11">
 		  	<div class="intro-headline">
 		  		A startup growth agency
 		  	</div>
@@ -247,12 +248,14 @@
 			</div>
 			<div class="container middle-text">
 				<div class="row">
-					<h2>Growth offers.</h2>
-					<p class="smaller-text-width">
-						<span class="boxed-color-text-white">
-							We offer tailored services throughout the digital product-lifecycle. </br>From quantitative and qualitative product analysis and usability testing to more comprehensive work on your growth and product development. Get in contact to book a meeting and discuss with us what we can do for you! </br>&nbsp;Read more <span class="four"> →</span>
-						</span>
-					</p>
+					<div class="col-md-11">
+						<h2>Growth offers.</h2>
+						<p class="smaller-text-width">
+							<span class="boxed-color-text-white">
+								We offer tailored services throughout the digital product-lifecycle. </br>From quantitative and qualitative product analysis and usability testing to more comprehensive work on your growth and product development. Get in touch to discuss what we might do for you! </br>&nbsp;Read more <span class="four"> →</span>
+							</span>
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>

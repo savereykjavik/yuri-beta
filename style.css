@@ -393,7 +393,7 @@ h2 {
 #offer1 {
 	position: relative;
 	background-color: #4D74FC;
-	/*color: ghostwhite;*/
+	color: ghostwhite;
 	padding-bottom: 100px;
 }
 
@@ -473,6 +473,10 @@ h2 {
 	    height: 100%;
 	}
 
+	.arrow {
+		width: 30px;
+	}
+
 	#footer {
 		min-height: 200px;
 	}
@@ -511,6 +515,10 @@ h2 {
 
 	#first {
 		margin-top: 50px;
+	}
+
+	.carousel-indicators {
+		display: none;
 	}
 
 	#short2, #offer1 {
