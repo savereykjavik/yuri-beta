@@ -17,9 +17,8 @@ p {
 
 .non-italic-p {
 	font-style: normal;
-	line-height: 1.2rem;
-	font-size: 2.2rem;
-	letter-spacing: 0.4px;
+	line-height: 1rem;
+	font-size: 2rem;
 }
 
 #intro p {
@@ -311,7 +310,7 @@ font-size: 1.5em;
 	font-size: 3rem;
   font-weight: bold;
   line-height: 1.2;
-  padding-bottom: 20px;
+  padding-bottom: 12px;
 }
 
 #intro-text .upper-text {
@@ -461,7 +460,8 @@ h2 {
 
 #typedtext {
 	display: inline-block;
-	font-size: 4rem;
+	font-size: 3rem;
+	padding-top: 20px;
 	min-height: 200px;
 }
 
