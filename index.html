@@ -1,398 +1,183 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>YURI | Innovation & Growth Agency</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/typed.js" type="text/javascript"></script>
+	<script>
+		$(function(){
+				Typed.new(".examples", {
+						strings: ["UX/UI", "data analysis", "product optimisation", "launching your startup", "growth", "analytics", "user insights", "clever marketing", "experience design", "innovating your product", "user testing","prototyping your MVP"],
+						typeSpeed: 30,
+						showCursor: true,
+				    cursorChar: "|",
+						backDelay: 700,
+						shuffle: false,
+						loop: true,
+						contentType: 'html',
+						loopCount: false,
+						callback: function(){  },
+						resetCallback: function() {  }
+				});
+		});
+
+
+	</script>
 	<!-- fonts -->
 	<script src="https://use.typekit.net/kgc4ugk.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:100,200,300,400,600,700,900' rel='stylesheet' type='text/css'>
-	<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-	<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
-	<!--   google analytics -->
-	  <script>
-	    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-	    ga('create', 'UA-69486455-1', 'auto');
-	    ga('send', 'pageview');
-	  </script>
-	<!--   end google analytics -->
-
-	<meta http-equiv="content-type" content="text/html; charset=utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>YURI | Innovation & Growth Agency</title>
-
-	<!-- jQuery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
-	<!-- Touchswipe plugin script -->
-	<!-- <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script> -->
-
-	<script src="js/bootstrap.min.js"></script>
-	<link href="css/bootstrap.min.css" rel="stylesheet"/>
-  	<link href="style.css" rel="stylesheet"/>
 
 
-       <!-- SMOOTH SCROLL -->
-      <script>
-
-		jQuery(document).ready(function($) {
-		    $('a[href^="#"]').on('click',function (e) {
-		        e.preventDefault();
-
-		        var target = this.hash,
-		            $target = $(target);
-
-		        $('html, body').stop().animate({
-		              'scrollTop': $target.offset().top
-		        }, 600, 'swing', function () {
-		              window.location.hash = target;
-		        });  // end of animate
-		    });  // end of click
-
-
-		      var s = $("#slide48h");
-		      var n = $(".navbar");
-		      var nt = $(".navcolor");
-
-		      var pos = s.position();
-
-		      $(window).scroll(function() {
-		        var windowpos = $(window).scrollTop();
-		        // console.log(windowpos);
-
-		        if (windowpos >= pos.top - 50) {
-		          n.addClass("whitebackground").removeClass("yuriblue");
-		          // nt.addClass("graytext").removeClass("whitetext");
-
-		        } else {
-		          n.removeClass("whitebackground").addClass("yuriblue");
-		          // nt.removeClass("graytext").addClass("whitetext");
-		        }
-		      });
-
-		}); // end of doc ready
-
-      </script>
-      <!-- End of SMOOTH SCROLL -->
-
-
-
-
-	<script>
-		$(function() {
-
-			$( ".navcolor" ).addClass( "graytext" );
-			$( ".navbar" ).addClass( "yuriblue" );
-
-
-			var firstcarousel = $('#slide48h')
-			var secondcarousel = $('#slideoffers')
-
-			// settings for all carousels
-			$('.carousel').carousel({
-				interval: false,
-				wrap: false
-			})
-
-			// slide scroll first slider
-			$( "#short" ).click(function() {
-				firstcarousel.carousel('next');
-			});
-
-			// slide scroll first slider
-			$( "#short2" ).click(function() {
-				firstcarousel.carousel('prev');
-			});
-
-			// slide scroll second slider
-			$( "#offers" ).click(function() {
-				secondcarousel.carousel('next');
-			});
-
-			// slide scroll second slider
-			$( "#offer1" ).click(function() {
-				secondcarousel.carousel('prev');
-			});
-
-			// fix to collapse mobile navbar again after clickin on it
-			$(document).on('click','.navbar-collapse.in',function(e) {
-			    if( $(e.target).is('a') ) {
-			        $(this).collapse('hide');
-			    }
-			});
-
-
-			firstcarousel.swipe( {
-		        //swipe handler for left/rightdirections
-		        swipeLeft:function(event, direction, distance, duration, fingerCount) {
-		          firstcarousel.carousel('next');
-		        },
-		        swipeRight:function(event, direction, distance, duration, fingerCount) {
-		          firstcarousel.carousel('prev');
-		        },
-		        // allowPageScroll:"auto",
-		        preventDefaultEvents: false,
-		        //Default is 75px, set to 0 for demo so any distance triggers swipe
-		         threshold:20
-	      	});
-
-
-	      	secondcarousel.swipe( {
-		        //swipe handler for left/rightdirections
-		        swipeLeft:function(event, direction, distance, duration, fingerCount) {
-		          secondcarousel.carousel('next');
-		        },
-		        swipeRight:function(event, direction, distance, duration, fingerCount) {
-		          secondcarousel.carousel('prev');
-		        },
-		        allowPageScroll:"auto",
-		        preventDefaultEvents: false,
-		        //Default is 75px, set to 0 for demo so any distance triggers swipe
-		         threshold:100
-	      	});
-
-		})
-	</script>
-
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<!-- Owl -->
+	<link rel="stylesheet" type="text/css" href="css/owl.css">
+	<!-- Animate.css -->
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.1.0/css/font-awesome.min.css">
+	<!-- Elegant Icons -->
+	<link rel="stylesheet" type="text/css" href="fonts/eleganticons/et-icons.css">
+	<!-- Main style -->
+	<link rel="stylesheet" type="text/css" href="css/cardio.css">
+	<!-- Main style -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
-
-<div id="space">
-</div>
-
-<!-- navigation panel -->
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="nav-container">
-
-	  <!-- Brand and toggle get grouped for better mobile display -->
-	  <div class="navbar-header">
-	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-main">
-	      <span class="sr-only">Toggle navigation</span>
-	      <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	    </button>
-	  </div>
-
-	  <div class="collapse navbar-collapse" id="navbar-collapse-main">
-		<ul class="nav navbar-nav">
-	        <li><a href="#logo" class="navcolor">Home</a></li>
-					    <li><a href="#slideoffers">Growth & Strategy</a></li>
-					    <li><a href="#slide48h">Innovation</a></li>
-	        <li><a href="#us" class="navcolor">Who we are</a></li>
-	        <li><a href="#footer" class="navcolor">Contact</a></li>
-	    </ul>
-	  </div>
-
+	<div class="preloader">
+		<img src="img/loader.gif" alt="Preloader image">
 	</div>
-</nav>
-<!-- end navigation panel -->
+	<nav class="navbar">
+		<div class="container-cardio">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav main-nav">
+					<li><a href="#contact" class="btn btn-blue">Contact us</a></li>
+					<li><a href="#">Home</a></li>
+					<li><a href="#offers">Growth & Strategy</a></li>
+					<li><a href="#short">Innovation</a></li>
+					<li><a href="#us">Who we are</a></li>
 
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+		<div class="container-cardio">
 
 <!-- new first section -->
-<div class="container-fluid" id="logo">
-	<div class="center">
-		<div class="inline">
-		  <h1 style="font-size: 11rem;">YURI</h1>
-			<img src="images/logo_structure.png" id="structure"/>
-		</div>
-		<div>
-				<p style="font-size: 3.4rem;">Innovation & Growth Agency</p>
-		</div>
-	</div>
-</div>
+			<div class="container-fluid" id="logo">
+				<div class="center">
+					<div class="inline">
+					  <h1 style="font-size: 10rem;">YURI</h1>
+						<img src="images/logo_structure.png" id="structure"/>
+					</div>
+					<div>
+							<p style="font-size: 3rem;">Innovation & Growth agency</p>
+					</div>
+				</div>
+			</div>
 
-<div class="container-fluid" id="intro">
-	<div class="container">
-		<div class="row" id="intro-text">
-			<div class="col-md-11">
-		  	<div class="intro-headline">
-		  		A startup growth agency from Stockholm
-		  	</div>
-		  	<div><p>
-					We love startups, and most of all we love to think and work like a startup. <br>We help companies to grow by combining knowledge and skills at the intersection of marketing, data-analysis, user experience and product design.
-				</p></div>
-		  </div>
-		</div>
-	</div>
-</div>
-</div>
+			<!-- split -->
+
+			<div class="container-fluid" id="intro">
+				<div class="container">
+					<div class="row" id="intro-text">
+						<div class="col-md-11">
+					  	<div class="intro-headline">
+					  		A startup agency from Stockholm
+					  	</div>
+					  	<div><p>
+								<span class="non-italic-p">We love startups, and most of all we love to think and work like a startup.</p><p class="non-italic-p">We help companies grow by combining knowledge and skills at the intersection of marketing, data-analysis, user experience and product design.
+							</span></p></div>
+					  </div>
+					</div>
+				</div>
+			</div>
 <!--  end first section -->
 
+<!-- fifth section contact -->
 
-
-
-<!-- Third section offers -->
-<div id="slideoffers" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#slideoffers" data-slide-to="0" class="active"></li>
-    <li data-target="#slideoffers" data-slide-to="1"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-
-    <div class="item active">
-		<div class="container-fluid" id="offers">
-			<div class="rightarrow col-md-1">
-				<img class="arrow" src="images/rightdark.png"/>
-			</div>
-			<div class="container middle-text">
-				<div class="row">
-					<div class="col-md-11">
-						<h2>Growth offers.</h2>
-						<p class="smaller-text-width">
-							<span class="boxed-color-text-white">
-								We offer tailored services throughout the digital product-lifecycle. </br>From quantitative and qualitative product analysis and usability testing to more comprehensive work on your user experience, growth and product development. Get in touch to discuss what we might do for you! </br>&nbsp;Read more <span class="four"> →</span>
-							</span>
-						</p>
-					</div>
+<div class="container-fluid" id="contact">
+	<div class="container middle-text">
+		<div class="row">
+			<div class="col-md-11">
+				<div id="typedtext">
+					<span class="startertext">Need help with </span><span class="examples"></span>
 				</div>
+				<h2>Contact us</h2>
+				<p class="smaller-text-width">
+					<span class="boxed-color-text-white">
+						<p>hello@yuriagency.com</p>
+					</span>
 			</div>
 		</div>
-    </div>
-
-    <div class="item">
-		<div class="container-fluid" id="offer1">
-			<div class="leftarrow col-md-1">
-				<img class="arrow" src="images/leftdark.png"/>
-			</div>
-			<div class="container middle-text expand">
-				<div id="offerrow" class="row">
-					<div class="col-md-12">
-						<p><span class="boxed-color-text-white">
-							No two projects are alike. We always start off by getting to know eachother. Our three main offers are based on a natural flow of work towards growth optimisation. Regardless of the scope, we start by getting to know you and your business, move on to generate valuable insights, develop clear roadmaps, and implement. Get in touch with us at hello@yuriagency.com to talk more!
-						</span></p>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4">
-						<div class="col-md-12 package-text">
-							Product & users
-						</div>
-						<div class="col-md-12">
-							<h3>We deep dive into an analysis of your product, the user experience and understanding your users through qualitative and quantitative data. This stage can include UX and user flows, usability testing, optimisation, in-depth product analysis and insights, data tracking, data analysis and roadmap prioritisation.</h3>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="col-md-12 package-text">
-							Growth analysis
-						</div>
-						<div class="col-md-12">
-							<h3>How to improve your digital growth strategy. We deliver an analysis and strategy for your growth funnel (acquisition, activation, retention, revenue, referral) and digital strategy. In-depth review of your growth engine (SEO, content, social media etc.). We identify key areas of improvement and the next steps to grow your business.</h3>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="col-md-12 package-text">
-							Growth team
-						</div>
-						<div class="col-md-12">
-							<h3>In this setup we work closely with you as a growth team. We kickstart growth projects combining skills in marketing, data analysis, technology and design - allowing us to move fast. Together we work in iterations to implement, test and measure initiatives to develop longterm strategies and a sustainable growth roadmap.</h3>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-    </div>
-
-  </div>
+	</div>
 </div>
-<!-- end third section offers -->
+<!-- end fifth  -->
 
 
-<!-- second section 48 hour -->
-<div id="slide48h" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#slide48h" data-slide-to="0" class="active"></li>
-    <li data-target="#slide48h" data-slide-to="1"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-
-    <div class="item active">
-		<div class="container-fluid" id="short">
-			<div class="rightarrow col-md-1">
-				<img class="arrow" src="images/rightdark.png"/>
-			</div>
-			<div class="container middle-text">
-				<div class="row">
-					<div class="col-md-11">
-						<h2>Innovation sprints.</h2>
-			  	<p class="smaller-text-width">
-						<span class="boxed-color-text-white">
-							Looking to gain new insights into the possibilities that emerging technologies and data could bring to your business? In our innovation sprints we get hands on with how things such as emerging technologies and new business models can take your business and products to the next level.
-						</span>
-					</p>
+<!-- second section -->
+			<div class="container-fluid" id="offers">
+				<!-- <div class="rightarrow col-md-1">
+					<img class="arrow" src="images/rightdark.png"/>
+				</div> -->
+				<div class="container middle-text">
+					<div class="row">
+						<div class="col-md-11">
+							<h2>Growth offers.</h2>
+							<p class="smaller-text-width">
+								<span class="boxed-color-text-white">
+									We offer tailored services throughout the digital product-lifecycle. From quantitative and qualitative product analysis and usability testing to more comprehensive work on your user experience, growth and product development. </br>Get in touch to discuss what we might do for with you!
+								<!-- </br>&nbsp;Read more <span class="four"> →</span> -->
+								</span>
+							</p>
+						</div>
 					</div>
 				</div>
+			</div>
+<!-- end second section  -->
+
+
+
+<!-- third section -->
+<div class="container-fluid lazy" id="short">
+	<!-- <div class="rightarrow col-md-1">
+		<img class="arrow" src="images/rightdark.png"/>
+	</div> -->
+	<div class="container middle-text">
+		<div class="row">
+			<div class="col-md-11">
+				<h2>Innovation sprints.</h2>
+			<p class="smaller-text-width">
+				<span class="boxed-color-text-white">
+					Looking to gain new insights into the possibilities that emerging technologies and data could bring to your business? </br>In an innovation sprint we get hands on with a specific brief - such as how emerging technologies and new business models can take your business and products to the next level. An innovation sprint can be anything from half-day workshops to long-term sprints where we help you develop ideas further.
+				</span>
+			</p>
 			</div>
 		</div>
-    </div>
-
-    <div class="item">
-		<div class="container-fluid" id="short2">
-			<div class="leftarrow col-md-1">
-				<img class="arrow" src="images/leftdark.png"/>
-			</div>
-			<div class="container middle-text expand">
-				<div class="row">
-					<div class="col-md-12">
-<!-- 						<p class="upper-text left-aligned"><b>Thinking big and thinking fast</b></p>
-
-						<p>In this intense 48 hour sprint we get hands on with how lean startup methods, emerging technologies and new business models can take your business and products to the next level.</p> -->
-
-						<p class="upper-text left-aligned">
-							<b>So how does it work?</b></p>
-						<p><span class="boxed-color-text-white">You hand us a brief or we will create one together and align our expectations.
-						We put together our team of 3-4 talented creatives, technologists and strategists and set up our creative workspace at your headquarters. During two intense days we research, create, prototype and test our concepts. All focused on innovation and growth concepts and working in close connection with key stakeholders from your organisation. The scope of an 48 hour brief can revolve around:
-						</span></p>
-
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4">
-						<div class="col-md-12 package-text">
-							Emerging technology
-						</div>
-						<div class="col-md-12">
-							<h3>Are you curious of how the Internet of Things, Virtual reality and other emerging technologies can enhance your customer experience and take your products and brand to the next level? We go hands on and dive deep in to the latest technology.</h3>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="col-md-12 package-text">
-							Think like a startup
-						</div>
-						<div class="col-md-12">
-							<h3>How could your business benefit from cost-effective experimentation, quick iterations, community building and growth hacking? Using data to improve products, reduce customer lock-out, shape customer expectations and create better user experiences.</h3>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="col-md-12 package-text">
-							Disruption
-						</div>
-						<div class="col-md-12">
-							<h3>What will be the big next distruptor in your business? (Hint, we think it should be you!) Concept co-creation to identify future trends to lead within your area, leveraging the knowledge within your organisation and finding the future trends and concepts.</h3>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-    </div>
-
-  </div>
+	</div>
 </div>
-<!-- end second section 48 hour -->
+<!-- end third section -->
 
 <!-- forth section us -->
-
 <div class="container-fluid" id="us">
 	<div class="container middle-text">
 		<div class="row">
@@ -400,25 +185,21 @@
 				<h2>Who we are.</h2>
 				<p class="smaller-text-width">
 					<span class="boxed-color-text-white">
-						We are a team with backgrounds and skills ranging from marketing and communication, scientific research, data-analysis, design and development. </br>A diverse set of people, spun into a tight knit group at Hyper Island where the founding team met. Our goal is to help businesses to grow smart and sustainably with the best tools and methods available.</p>
+						We are a team with backgrounds and skills ranging from marketing and communication, scientific research, health, data-analysis, design and development. </br>A diverse set of people, spun into a tight knit group at Hyper Island where the founding team met. Our goal is to help businesses build great things, and grow smart and sustainably with the best tools and methods available.</p>
 					</span>
-				<p>
-				</br>
-				Alessandro, Caroline & Stefan, YURI co-founders
-				</p>
 			</div>
 		</div>
 	</div>
 </div>
-
 <!-- end forth section us  -->
 
-<!-- footer -->
 
+
+<!-- footer -->
 <div class="container-fluid" id="footer">
 	<div class="container middle-text">
 		<div class="row">
-			<h3><b>YURI </b></br>Innovation and Growth Agency</br>
+			<h3><b>YURI</b>  - Innovation and Growth agency</br>
 				Stockholm | Sweden</br>
 				hello@yuriagency.com</br>
 			</h3>
@@ -427,7 +208,26 @@
 		</div>
 	</div>
 </div>
-
 <!-- end footer -->
 
+	<!-- Holder for mobile navigation -->
+	<div class="mobile-nav">
+		<ul>
+		</ul>
+		<a href="#" class="close-link"><i class="arrow_up"></i></a>
+	</div>
+	<!-- Scripts -->
+
+
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/typewriter.js"></script>
+	<script src="js/jquery.onepagenav.js"></script>
+	<script src="js/main.js"></script>
+
 </body>
+
+</html>
