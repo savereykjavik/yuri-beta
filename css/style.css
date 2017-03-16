@@ -676,7 +676,8 @@ h2 {
 @media screen and (max-width: 767px) {
 
 	.navbar {
-		top: 0px;
+		top: 0px !important;
+		padding: 0px !important;
 	}
 
 /* keeping the dropdown part aligned with other li elements */
