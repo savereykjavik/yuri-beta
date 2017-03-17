@@ -264,8 +264,17 @@
 
 		} else {
 			$("#intro").addClass("after-load").removeClass("push");
-			$(".container-fluid").delay(500).addClass("after-load");
 	    $(".wrapper").delay(500).removeClass("push");
+
+			$(window).on('scroll', function() {
+			  $(".wrapper").each(function() {
+			    if (isScrolledIntoView($(this))) {
+			      $(this).find(".container-fluid").addClass("after-load");
+			    }
+				});
+			});
+
+
 		};
 
 
