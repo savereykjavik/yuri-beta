@@ -17,27 +17,28 @@ body {
 .after-load {
 	will-change: opacity;
 	opacity: 1;
-	-webkit-transition: all 1.5s ease 0.2s;
-	-moz-transition: all 1.5s ease 0.2s;
-	-ms-transition: all 1.5s ease 0.2s;
-	-o-transition: all 1.5s ease 0.2s;
-	transition: all 1.5s ease 0.2s;
+	-webkit-transition: all 1s ease-in 0s;
+	-moz-transition: all 1s ease-in 0s;
+	-ms-transition: all 1s ease-in 0s;
+	-o-transition: all 1s ease-in 0s;
+	transition: all 1s ease-in 0s;
 }
 
 .push {
 	opacity: 0;
-	-webkit-transform: translate(0px, 50px);
-	transform: translate(0px, 50px);
+	-webkit-transform: translate(0px, 70px);
+	transform: translate(0px, 70px);
 }
 
 .wrapper {
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-ms-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	transition: all 0.5s ease;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
 	max-width: 1200px;
 	margin: 0 auto;
+	will-change: opacity;
 }
 
 .green-pink {
