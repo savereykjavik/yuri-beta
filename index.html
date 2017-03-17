@@ -238,11 +238,11 @@
 		$(".container-fluid").addClass("before-load");
 		$(".wrapper").addClass("push");
 		$("#logo").addClass("after-load").removeClass("push");
-		$("#footer").addClass("after-load").removeClass("push");
+		$("#footer").addClass("after-load");
 
 		// desktop
 		if ( $(window).width() > 600) {
-		$("#intro").addClass("after-load").removeClass("push");
+		$("#intro").addClass("after-load");
 
 			$(".wrapper").each(function() {
 				if (isScrolledIntoView($(this))) {
