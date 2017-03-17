@@ -175,13 +175,13 @@
 			</div>
 		</div>
 	</div>
-
+</div>
 <!-- end forth section us  -->
 
 
 
 <!-- footer -->
-
+<div class="wrapper black">
 	<div class="container-fluid" id="footer">
 		<div class="container middle-text">
 			<div class="row">
@@ -189,7 +189,7 @@
 					Stockholm | Sweden</br>
 					hello@yuriagency.com</br>
 				</h3>
-	</br></br>
+				</br></br>
 				<h7>©YURI Innovation & Growth 2017</h7>
 			</div>
 		</div>
@@ -212,24 +212,6 @@
 	<script src="js/typewriter.js"></script>
 	<script src="js/jquery.onepagenav.js"></script>
 	<script src="js/main.js"></script>
-	<script type="text/javascript" src="js/jquery.lazy.js"></script>
-	<script>
-		$(function() {
-				$('.lazy').Lazy(
-					{
-		        // your configuration goes here
-		        scrollDirection: 'vertical',
-		        effect: 'fadeIn',
-						threshold: 50,
-						effectTime: 1000,
-		        // visibleOnly: true,
-		        onError: function(element) {
-		            console.log('error loading ' + element.data('src'));
-		        }
-			    }
-				);
-		});
-	</script>
 	<script src="js/typed.js" type="text/javascript"></script>
 	<script>
 		$(function(){
@@ -252,25 +234,40 @@
 	<script>
 
 	$(document).ready(function() {
-    $(".container-fluid").addClass("before-load");
-    $(".wrapper").addClass("push");
-    $("#logo").addClass("after-load");
+
+		$(".container-fluid").addClass("before-load");
+		$(".wrapper").addClass("push");
+		$("#footer").addClass("after-load").removeClass("push");
+
+		// desktop
+		if ( $(window).width() > 600) {
+			console.log('larger than 600');
+	    $("#logo").addClass("after-load");
 
 
-		$(".wrapper").each(function() {
-			if (isScrolledIntoView($(this))) {
-				$(this).removeClass("push").find(".container-fluid").addClass("after-load");
-			}
-		});
+			$(".wrapper").each(function() {
+				if (isScrolledIntoView($(this))) {
+					$(this).removeClass("push").find(".container-fluid").addClass("after-load");
+				}
+			});
 
-	});
+			$(window).on('scroll', function() {
+			  $(".wrapper").each(function() {
+			    if (isScrolledIntoView($(this))) {
+			      $(this).removeClass("push").find(".container-fluid").addClass("after-load");
+			    }
+			  });
+			});
 
-	$(window).on('scroll', function() {
-	  $(".wrapper").each(function() {
-	    if (isScrolledIntoView($(this))) {
-	      $(this).removeClass("push").find(".container-fluid").addClass("after-load");
-	    }
-	  });
+
+		} else {
+			console.log('smaller than 600');
+
+			$(".container-fluid").delay(500).addClass("after-load");
+	    $(".wrapper").delay(500).removeClass("push");
+		};
+
+
 
 	});
 

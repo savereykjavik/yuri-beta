@@ -151,8 +151,8 @@ h4 {
 
 .middle-text {
 	position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+  top: 50%;
+  transform: translateY(-50%);
 	transform: translateY(-50%);
 	-ms-transform: translateY(-50%);
 	-webkit-transform: translateY(-50%);
@@ -667,7 +667,11 @@ h2 {
 @media screen and (min-width: 992px) {
 
 	.display-mobile {
-	display: none;
+		display: none;
+	}
+
+	.container-fluid {
+		max-height: 600px;
 	}
 
 }
