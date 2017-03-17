@@ -17,11 +17,11 @@ body {
 .after-load {
 	will-change: opacity;
 	opacity: 1;
-	-webkit-transition: all 1s ease 0.6s;
-	-moz-transition: all 1s ease 0.6s;
-	-ms-transition: all 1s ease 0.6s;
-	-o-transition: all 1s ease 0.6s;
-	transition: all 1s ease 0.6s;
+	-webkit-transition: all 1s ease 0.2s;
+	-moz-transition: all 1s ease 0.2s;
+	-ms-transition: all 1s ease 0.2s;
+	-o-transition: all 1s ease 0.2s;
+	transition: all 1s ease 0.2s;
 }
 
 .push {

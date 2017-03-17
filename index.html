@@ -254,15 +254,17 @@
 			$(window).on('scroll', function() {
 			  $(".wrapper").each(function() {
 			    if (isScrolledIntoView($(this))) {
-			      $(this).removeClass("push").find(".container-fluid").addClass("after-load");
+			      $(this).removeClass("push");
 			    }
-			  });
+
+					if(isHalfIntoView($(this))) {
+						$(this).find(".container-fluid").addClass("after-load");
+			  	}
+				});
 			});
 
 
 		} else {
-			console.log('smaller than 600');
-
 			$(".container-fluid").delay(500).addClass("after-load");
 	    $(".wrapper").delay(500).removeClass("push");
 		};
@@ -280,6 +282,20 @@
 
 	    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 	}
+
+
+	function isHalfIntoView(elem) {
+			var docViewTop = $(window).scrollTop();
+			var docViewBottom = docViewTop + $(window).height();
+
+			var elemTop = $(elem).offset().top;
+			var elemMiddle = elemTop + $(elem).height() / 2;
+			console.log(elemMiddle < docViewBottom);
+			return ( elemMiddle < docViewBottom );
+
+
+	}
+
 	</script>
 
 </body>
