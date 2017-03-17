@@ -275,7 +275,7 @@
 	    var docViewTop = $(window).scrollTop();
 	    var docViewBottom = docViewTop + $(window).height();
 
-	    var elemTop = $(elem).offset().top + 100;
+	    var elemTop = $(elem).offset().top + 50;
 	    var elemBottom = elemTop + $(elem).height() - 100;
 
 	    return ((elemTop < docViewBottom && elemTop > docViewTop) || ( elemBottom > docViewTop && elemBottom < docViewBottom ));
