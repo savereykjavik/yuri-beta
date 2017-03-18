@@ -1001,7 +1001,7 @@ footer .social-footer li:hover a {
 }
 
 .mobile-nav a.close-link {
-	font-size: 24px;
+	font-size: 36px;
 	position: absolute;
 	bottom: 0px;
 	left: calc(50% - 10px);
@@ -1010,6 +1010,15 @@ footer .social-footer li:hover a {
 	padding: 15px 0;
 	color: #fff;
 	background: #4D74FC;
+}
+
+.mobile-nav a.close-link .rotate {
+	-ms-transform: rotate(45deg); /* IE 9 */
+	-webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+	transform: rotate(45deg);
+	display: block;
+	width: 1em;
+  margin: 0 auto;
 }
 
 .row.title {

@@ -77,6 +77,7 @@ p {
     line-height: 1.2;
 }
 
+
 #typedtext {
 	display: -webkit-inline-box;
 	font-family: "baskerville";
@@ -342,6 +343,18 @@ font-size: 1.5em;
 .navbar-toggle {
 	float: left;
 	margin-left: 15px;
+}
+
+.navbar.navbar-fixed-top {
+	position: fixed;
+	top: 0;
+	margin-top: 0;
+	opacity: 1;
+	box-shadow: none;
+}
+
+.navbar.navbar-fixed-top.shadow {
+	box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.05);
 }
 
 #contact {
