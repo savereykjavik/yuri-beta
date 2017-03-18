@@ -397,10 +397,10 @@ h1 {
 #short {
 	color: #ffffff;
 	position: relative;
-	background-image: url('images/nasa.jpg');
+	background-image: url('images/nasaRGBfilter.png');
 	background-size: cover;
 	background-repeat: no-repeat;
-	box-shadow: inset 0 0 0 1000px rgba(218, 200, 200, 0.6);
+	/*box-shadow: inset 0 0 0 1000px rgba(218, 200, 200, 0.6);*/
 
 	-webkit-backface-visibility: hidden;
 	-webkit-perspective: 1000;
